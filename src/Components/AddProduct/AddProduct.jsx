@@ -26,7 +26,7 @@ const AddProduct = () => {
         let product = productDetails;
 
         let formData = new FormData();
-        formData.append('product',image);
+        formData.append('product',image); //anu
 
         
         
