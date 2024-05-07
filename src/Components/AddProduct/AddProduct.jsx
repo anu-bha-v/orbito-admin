@@ -7,7 +7,7 @@ const AddProduct = () => {
     const [image,setImage] = useState(false);
     const [productDetails,setProductCetails] = useState({
         name:"",
-        image:"",
+        image:"img.urls.regular",
         category:"women",
         new_price:"",
         old_price:""
