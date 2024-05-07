@@ -30,7 +30,7 @@ const AddProduct = () => {
 
         
         
-        await fetch('https://orbito-backend.onrender.com/upload',{
+        await fetch('${backendURL}/upload',{
             method:'POST',
             headers:{
                 Accept:'application/json',
@@ -42,7 +42,7 @@ const AddProduct = () => {
         {
             product.image=responseData.image_url;
             console.log(product);
-            await fetch('https://orbito-backend.onrender.com/addproduct',{
+            await fetch('${backendURL}/addproduct',{
                 method:'POST',
                 headers:{
                     Accept:'application/json',
